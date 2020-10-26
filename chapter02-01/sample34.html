@@ -29,6 +29,12 @@
 			<li>サンプルテキスト8</li>
 		</ul>
 	</ul>
+	<pre>
+		$(function () {
+			$("li:contains('サンプル')").css("color", "red");
+			$("li:has(strong)").css("color", "red");
+		});
+	</pre>
 </body>
 
 </html>
