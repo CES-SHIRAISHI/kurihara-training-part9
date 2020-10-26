@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample7</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("li > strong").css("color","red");
-});
-		</script>
-	</head>
-	<body>
-		<ul>
-			<li><strong>テキスト</strong>テキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li><div><strong>テキスト</strong>テキストテキストテキスト<span>テキスト</span></div></li>
-			<li>テキストテキストテキストテキストテキスト</li>
-		</ul>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample7</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(function () {
+			// > は 小結合子 と呼ぶ、 直接の子供 を示す結合子。
+			// li 直下 に ある strong 要素を示す
+			$("li > strong").css("color", "red");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li>
+			<strong> ( li 要素の 直下 の strong に囲まれた文章 ) </strong>
+			( li 要素の 直下 の strong に囲まれてない文章 )
+		</li>
+		<li>li 要素のテキスト 1 </li>
+		<li>
+			<div>
+				<strong> ( li 要素の 直下 は Div で その直下の strong に囲まれた文章 ) </strong>
+				テキスト A
+				<span> テキスト B </span>
+			</div>
+		</li>
+		<li>li 要素のテキスト 2 </li>
+	</ul>
+</body>
+
 </html>

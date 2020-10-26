@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample9</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("li:first-child").css("color","red");
-});
-		</script>
-	</head>
-	<body>
-		<ul>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-		</ul>
-		<ul>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-		</ul>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample9</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(function () {
+			// : は 擬似クラス と呼び、特定の状態を示す
+			// li 要素の 最初の要素を示す
+			$("li:first-child").css("color", "red");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li>テキスト1</li>
+		<li>テキスト2</li>
+		<li>テキスト3</li>
+		<li>テキスト4</li>
+	</ul>
+	<ul>
+		<li>テキスト5</li>
+		<li>テキスト6</li>
+		<li>テキスト7</li>
+		<li>テキスト8</li>
+	</ul>
+</body>
+
 </html>
