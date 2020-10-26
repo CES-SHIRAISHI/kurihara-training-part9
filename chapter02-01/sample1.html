@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample1</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("li").css("color","red");
-});
-		</script>
-	</head>
-	<body>
-		<ul>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-			<li>テキストテキストテキストテキストテキスト</li>
-		</ul>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample1</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		// jQuery は エイリアス として $ を定義しているので、 $ として利用できる ( jQuery = $ )
+		// $ を変更することもできる ( noconflict )
+
+		// $( 関数 ) を指定した場合、 内部的に $.ready( 関数 ) に 情報を渡しているので同じ意味となる
+		// これは window.addEventListener("DOMContentLoaded", 関数) と同じようなタイミング(DOM構築後)で 関数が実行される
+		$(function () {
+			// DOM構築後に実行される
+
+			// $("li") で 要素となる li をセレクタ(要素セレクタ)と指定している。
+			// その後、cssメソッド で 文字色(color)を赤にする
+			// jQuery は 戻り値として、自分自身の jQuery オブジェクト を戻すので、続けて変更を記載することが出来る（メソッドチェーン）
+			$("li").css("color", "red");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li>テキストテキストテキストテキストテキスト</li>
+		<li>テキストテキストテキストテキストテキスト</li>
+		<li>テキストテキストテキストテキストテキスト</li>
+		<li>テキストテキストテキストテキストテキスト</li>
+	</ul>
+</body>
+
 </html>

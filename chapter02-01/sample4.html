@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample4</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$(".first strong").css("color","red");
-});
-		</script>
-	</head>
-	<body>
-		<ul>
-			<li class="first"><strong>テキスト</strong>テキストテキストテキストテキスト</li>
-			<li class="second"><strong>テキスト</strong>テキストテキストテキストテキスト</li>
-			<li class="third"><strong>テキスト</strong>テキストテキストテキストテキスト</li>
-			<li class="fourth"><strong>テキスト</strong>トテキストテキストテキストテキスト</li>
-		</ul>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample4</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(function () {
+			// スペース(以外もある)は 子孫結合子 となっていて、
+			// 子孫結合子 の前 ( .first ) の 子孫 として、 後 (strong) の要素セレクタ を検索している
+			// strong の 事を 子孫セレクタ と言っている人がいる ( 別に用語は覚えなくていい )
+			$(".first strong").css("color", "red");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li class="first"><strong>class="first" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
+		<li class="second"><strong></strong>class="second" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
+		<li class="third"><strong></strong>class="third" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
+		<li class="fourth"><strong></strong>class="fourth" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
+	</ul>
+</body>
+
 </html>
