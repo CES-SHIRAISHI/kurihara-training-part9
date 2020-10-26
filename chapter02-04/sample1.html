@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample1</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("button").click(function(){
-		$("p").text($("input").val()+"にメールを送信します。");
-		$("button").text("送信");
-	});
-});
-		</script>
-	</head>
-	<body>
-		<p>メールアドレス：<input type="text" name="name"></p>
-		<button>確認</button>
-		
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>sample1</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(function () {
+                $("button").click(function () {
+                    // メールアドレスの値を取得する( input 要素 )
+                    var mailaddress = $("input").val();
+                    var message = mailaddress + "にメールを送信します。";
+
+                    // メールアドレス入力 ではなく メッセージを表示
+                    $("p").text(message);
+
+                    // 確認 → 送信に変える
+                    $("button").text("送信");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>メールアドレス：<input type="text" name="name" /></p>
+        <button>確認</button>
+    </body>
 </html>

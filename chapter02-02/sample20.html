@@ -8,13 +8,21 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
-			$("a").text($("a").attr("href"));
+			// A 要素を取得
+			var a_tag = $("a");
+
+			// A 要素の中から href 属性を取得
+			var href = a_tag.attr("href");
+
+			// A タグのテキストに href 属性の値をセット
+			// … この場合は リンク先 と書いてある箇所（テキスト） に http://www.google.com/ を上書きする
+			a_tag.text( href );
 		});
 	</script>
 </head>
 
 <body>
-	<a href="http://ascii.jp/">リンク先</a>
+	<a href="http://www.google.com/">リンク先</a>
 </body>
 
 </html>

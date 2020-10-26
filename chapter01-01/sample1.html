@@ -8,11 +8,34 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
+			// 画面読み込み時に実施される処理
+
+			// (一番最初に現れる(first-of-type) dd要素) 以外(not) の 表示を消す (display : none)
+			// dd:first-of-type は <p>本文1</p> の箇所を示している。 これの not なので、 本文2 と 本文3 の箇所に display:none (非表示) を設定している
 			$("dd:not(:first-of-type)").css("display", "none");
-			$("dl dt").click(function () {
-				if ($("+dd", this).css("display") == "none") {
+
+			// dl 要素 の 子孫である dt 要素 をクリックした場合のイベントを定義
+			$("dl dt").click(function ( event ) {
+				// イベントのコールバック関数( この場合だとclickイベントが発生した場合に呼ばれる関数 )の引数には event がセットされる
+				// 例の場合は this と event.currentTarget は 同じ意味 だが、
+				// this は利用シチュエーション により、実際に示すオブジェクト異なるので、あまり正しくない
+				var clicked_dt = event.currentTarget;	// クリックした dt 要素 を示す
+
+				// + は 直後に来る 要素 を示す演算子、 第2引数は 代替コンテキスト を示す。
+				// この場合は 代替コンテキストのDOM内で 要素検索を実施する
+				// すなわち、クリックされた dt の直後に来る(+の結合子) dd 要素 を示す
+				var relative_dd = $("+dd", clicked_dt);
+
+				// クリックした dt に関連する dd が隠れていた(display:none)場合
+				if ( relative_dd.css("display") == "none") {
+					// クリックしたdt に 対応する dd 要素(すなわち本文)は見えるようにして、今まで見えていた 本文は隠す動きをさせる
+
+					// dd 要素の中で 見えている物は 高さを調節して下から上に消えていくようにする動きをさせる(slideUp)
 					$("dd:visible").slideUp("slow");
-					$("+dd", this).slideDown("slow");
+
+					// クリックした dt に紐づく dd 要素は 高さを調節して上から下に見えるようにする動きをさせる(slideDown)
+					relative_dd.slideDown("slow");
+
 				}
 			});
 		});
@@ -45,17 +68,17 @@
 <body>
 	<div id="container">
 		<dl>
-			<dt>テキスト1</dt>
+			<dt>タイトル1</dt>
 			<dd>
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<p>本文1</p>
 			</dd>
-			<dt>テキスト2</dt>
+			<dt>タイトル2</dt>
 			<dd>
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<p>本文2</p>
 			</dd>
-			<dt>テキスト3</dt>
+			<dt>タイトル3</dt>
 			<dd>
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<p>本文3</p>
 			</dd>
 		</dl>
 	</div>

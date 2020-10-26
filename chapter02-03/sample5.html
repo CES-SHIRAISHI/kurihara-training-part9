@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample5</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("a:eq(0)").click(function(){
-		$("img").attr("src","flower.jpg").attr("alt","花");
-		return false;
-	});
-	$("a:eq(1)").click(function(){
-		$("img").attr("src","sea.jpg").attr("alt","海");
-		return false;
-	});
-	$("a:eq(2)").click(function(){
-		$("img").attr("src","jellyfish.jpg").attr("alt","くらげ");
-		return false;
-	});
-	$("a:eq(3)").click(function(){
-		$("img").attr("src","building.jpg").attr("alt","建物");
-		return false;
-	});
-});
-		</script>
-	</head>
-	<body>
-	<ul>
-		<li><a href="flower.png">花</a></li>
-		<li><a href="sea.jpg">海</a></li>
-		<li><a href="jellyfish.png">くらげ</a></li>
-		<li><a href="building.png">建物</a></li>
-	</ul>
-	<p><img src="flower.jpg" alt="花"></p>
-	
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>sample5</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(function () {
+		// A 要素の 1つめ がクリックされたら
+        $("a:eq(0)").click(function () {
+		  // img 要素の src 属性に flower.png をセット、 alt 属性に 花 をセット
+		  $("img").attr("src", "flower.png").attr("alt", "花");
+		  
+		  // イベントの伝播を中止する(本来は A のリンクを押すと画面遷移するが、それを止める)
+          return false;
+        });
+        $("a:eq(1)").click(function () {
+          $("img").attr("src", "sea.jpg").attr("alt", "海");
+          return false;
+        });
+        $("a:eq(2)").click(function () {
+          $("img").attr("src", "jellyfish.png").attr("alt", "くらげ");
+          return false;
+        });
+        $("a:eq(3)").click(function () {
+          $("img").attr("src", "building.png").attr("alt", "建物");
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="flower.png">花</a></li>
+      <li><a href="sea.jpg">海</a></li>
+      <li><a href="jellyfish.png">くらげ</a></li>
+      <li><a href="building.png">建物</a></li>
+    </ul>
+    <p><img src="flower.png" alt="花" /></p>
+  </body>
 </html>

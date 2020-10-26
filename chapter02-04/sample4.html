@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample4</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("input").val(" 入力してください").css("color","#CCC").one("focus",function(){
-		$(this).val("").css("color","#000");
-	});
-});
-		</script>
-	</head>
-	<body>
-		お名前：<input type="text" value="">
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>sample4</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(function () {
+
+				// 入力欄に 灰色で 入力して下さい とセットする
+                $("input")
+                    .val("入力してください")
+                    .css("color", "#CCC")
+                    .one("focus", function () {
+						// 実際に入力欄に フォーカス(カーソルが当たる) 場合は
+						// 値を 空にして、 文字色も 元に戻す 
+                        $(this).val("").css("color", "#000");
+                    });
+            });
+        </script>
+    </head>
+    <body>
+        お名前：<input type="text" value="" />
+    </body>
 </html>

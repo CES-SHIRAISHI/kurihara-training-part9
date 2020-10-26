@@ -6,6 +6,12 @@
 
 ## 事前に必要な知識など
 
+以下の参考資料 （ セレクタ と 擬似クラス ） に目を通してある程度覚えておいたほうが良い
+最低限、こんな指定ができる事は理解しておく
+
+- [セレクタ](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Selectors)
+- [疑似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes)
+- [jQuery入門](http://www.jquerystudy.info/index.html)
 
 
 ## 補足すること
@@ -13,20 +19,14 @@
 
 
 ### P07.ハンズオン 01 
-- こんな風になるんだ的な感じで良い
-- 実際にアニメーションを動かすことはデザイナではないのであまりない
 
-#### オンラインデモ
+あくまで参考程度。全てを理解するのは後でも良い。実際にアニメーションを動かすことはデザイナではないのであまりない
+
+オンラインデモ
 - [chapter01/01/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter01-01/sample1.html)
 
 
 ### P10.ハンズオン 02 
-
-以下の参考資料 （ セレクタ と 擬似クラス ） に目を通しておいたほうが良い
-
-- https://developer.mozilla.org/ja/docs/Web/CSS
-- https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Selectors
-- https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes
 
 オンラインデモ
 
@@ -39,8 +39,6 @@
 
 
 ### P11.ハンズオン 03
-
-
 
 オンラインデモ
 
@@ -63,24 +61,34 @@
 
 ### P15.ハンズオン 05
 
+オンラインデモ
+
 - [chapter02/02/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample1.html)
 - [chapter02/02/sample2.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample2.html)
 
 ### P16.ハンズオン 06
+
+オンラインデモ
 
 - [chapter02/02/sample3.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample3.html)
 - [chapter02/02/sample4.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample4.html)
 
 ### P17.ハンズオン 07
 
+オンラインデモ
+
 - [chapter02/02/sample5.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample5.html)
 - [chapter02/02/sample7.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample7.html)
 
 ### P18.ハンズオン 08
 
+オンラインデモ
+
 - [chapter02/02/sample9.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample9.html)
 
 ### P19.ハンズオン 09
+
+オンラインデモ
 
 - [chapter02/02/sample17.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample17.html)
 
@@ -130,6 +138,26 @@
 
 ### P31.ハンズオン 18
 
+ソースコードが同じ処理が記載してあったり、あまり良い内容ではなかったので、例として書くとしたら以下のようなコードになる。
+
+
+```js
+// アロー関数利用
+var placeholder_action_on  = target => $(target).val("入力してください").css("color", "#CCC");
+var placeholder_action_off = event  => $(event.currentTarget).val("").css("color", "#000");
+
+$(function () {
+    var input_element = $("input");
+
+    placeholder_action_on(input_element);
+
+    $("input")
+        .one("focus", placeholder_action_off)
+        .blur(function (event) {
+            placeholder_action_on(event.currentTarget).one("focus", placeholder_action_off);
+        });
+});
+```
 - [chapter02/04/sample5.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample5.html)
 
 ### P32.ハンズオン 19
@@ -138,6 +166,10 @@
 
 
 ### P34.ハンズオン 20
+
+1. `$("span").css("font-weight")` の戻り値は数値を返すことがあり、 bold という文字列を返さないため、ハンズオンのソースは正しくない。そもそも値がセットされていない場合は `undefined` を戻すので、それを利用する
+1. 別のページにサブミットされてしまうため、サブミットされないように修正を実施している
+1. 値が入った場合にどうするか？というのを考えて個人で修正すると良い
 
 - [chapter02/04/sample8.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample8.html)
 

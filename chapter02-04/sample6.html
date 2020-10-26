@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample6</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("select").change(function(){
-		$("span").text($(this).val());
-	});
-});
-		</script>
-	</head>
-	<body>
-		申し込み者：
-		<select>
-			<option value="お名前">個人</option>
-			<option value="会社名">法人</option>
-		</select>
-		<p><span>お名前</span><input type="text"></p>
+    <head>
+        <meta charset="utf-8" />
+        <title>sample6</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(function () {
+                // 申込者 が 選択された場合
+                $("select").change(function () {
+					// 選択された申込者を取得
+					var selected_value = $(this).val();
 
-	</body>
+					// <span>お名前</span> の箇所に対応する内容をセット
+                    $("span").text(selected_value);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        申し込み者：
+        <select>
+            <option value="お名前">個人</option>
+            <option value="会社名">法人</option>
+        </select>
+        <p><span>お名前</span><input type="text" /></p>
+    </body>
 </html>
