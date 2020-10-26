@@ -8,6 +8,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
+			// 属性セレクタは 存在を示す以外に、 属性に対応する値があるかどうかで 要素を選択することができる
+			// title 属性 が second となる 要素を検索
 			$("[title='second']").css("color", "red");
 		});
 	</script>
@@ -15,10 +17,10 @@
 
 <body>
 	<ul>
-		<li title="first">テキストテキストテキストテキストテキスト</li>
-		<li title="second">テキストテキストテキストテキストテキスト</li>
-		<li title="third">テキストテキストテキストテキストテキスト</li>
-		<li title="fourth">テキストテキストテキストテキストテキスト</li>
+		<li title="first">テキスト first</li>
+		<li title="second">テキスト second</li>
+		<li title="third">テキスト third</li>
+		<li title="fourth">テキスト fourth</li>
 	</ul>
 </body>
 

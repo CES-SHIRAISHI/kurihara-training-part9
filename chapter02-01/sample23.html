@@ -8,6 +8,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
+			// [] の事を 属性セレクタ と呼び、 指定した属性 を持つ 要素を検索する
+			// 以下の場合は id 属性 を持つ、要素を検索
 			$("[id]").css("color", "red");
 		});
 	</script>
@@ -15,10 +17,10 @@
 
 <body>
 	<ul>
-		<li id="first">テキストテキストテキストテキストテキスト</li>
-		<li class="second">テキストテキストテキストテキストテキスト</li>
-		<li id="third">テキストテキストテキストテキストテキスト</li>
-		<li class="fourth">テキストテキストテキストテキストテキスト</li>
+		<li id="first">id = first となるテキスト(id 属性を持つ)</li>
+		<li class="second">class = second となるテキスト(class 属性を持つ)</li>
+		<li id="third">id = third となるテキスト(id 属性を持つ)</li>
+		<li class="fourth">class = fourth となるテキスト(class 属性を持つ)</li>
 	</ul>
 </body>
 

@@ -22,6 +22,13 @@
 
 ### P10.ハンズオン 02 
 
+以下の参考資料 （ セレクタ と 擬似クラス ） に目を通しておいたほうが良い
+
+- https://developer.mozilla.org/ja/docs/Web/CSS
+- https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Selectors
+- https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes
+
+
 #### オンラインデモ
 
 - [chapter02/01/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample1.html)
