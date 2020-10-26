@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample5</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("li *").css("color","red");
-});
-		</script>
-	</head>
-	<body>
-		<ul>
-			<li><strong>テキスト</strong>テキストテキストテキストテキスト</li>
-			<li><em>テキスト</em>テキストテキストテキストテキスト</li>
-			<li><span>テキスト</span>テキストテキストテキストテキスト</li>
-			<li>テキストトテキストテキストテキストテキスト</li>
-		</ul>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample5</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(function () {
+			// * を ユニバーサルセレクタ と呼ぶ、 これは すべての要素 を表す。
+			// 意味合いとしては li の要素 の孫 のすべての属性 を示している
+			$("li *").css("color", "red");
+		});
+	</script>
+</head>
+
+<body>
+	<ul>
+		<li><strong>テキスト</strong>テキストテキストテキストテキスト</li>
+		<li><em>テキスト</em>テキストテキストテキストテキスト</li>
+		<li><span>テキスト</span>テキストテキストテキストテキスト</li>
+		<li>テキストトテキストテキストテキストテキスト</li>
+	</ul>
+</body>
+
 </html>
