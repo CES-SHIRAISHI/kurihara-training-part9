@@ -9,8 +9,11 @@
 	<script>
 		$(function () {
 			// : は 擬似クラス と呼び、特定の状態を示す
-			// li 要素の 最初の要素を示す
+			// 最初の li 要素 を示す
 			$("li:first-child").css("color", "red");
+
+			// ※ 最初の li じゃないと、反応しない （例が悪い
+			$("p:first-child").css("color", "blue");
 		});
 	</script>
 </head>
@@ -28,6 +31,15 @@
 		<li>テキスト7</li>
 		<li>テキスト8</li>
 	</ul>
+	<!-- -->
+	<div>
+		<p>追加したテキスト1</p>
+		<span>追加したテキスト2</span>
+	</div>
+	<div>
+		<span>追加したテキスト3</span>
+		<p>追加したテキスト4</p>
+	</div>
 </body>
 
 </html>
