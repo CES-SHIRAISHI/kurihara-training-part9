@@ -8,21 +8,36 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
-			// 
+			// first-child と 違い、一番最初に出てくるものに反応する
+			// 一番最初の dd 要素 に対応する
 			$("dd:first-of-type").css("color", "red");
+			// first-child と 同じ例
+			$("p:first-of-type").css("color", "blue");
 		});
 	</script>
 </head>
 
 <body>
 	<dl>
-		<dt> 1.テキストテキストテキストテキストテキスト</dt>
-		<dd> 2.テキストテキストテキストテキストテキスト</dd>
-		<dt> 3.テキストテキストテキストテキストテキスト</dt>
-		<dd> 4.テキストテキストテキストテキストテキスト</dd>
-		<dt> 5.テキストテキストテキストテキストテキスト</dt>
-		<dd> 6.テキストテキストテキストテキストテキスト</dd>
+		<dt>タイトル1</dt>
+		<dd>本文1</dd>
+		<!-- / -->
+		<dt>タイトル2</dt>
+		<dd>本文2</dd>
+		<!-- / -->
+		<dt>タイトル3</dt>
+		<dd>本文3</dd>
 	</dl>
+	<!-- -->
+	<div>
+		<p>追加したテキスト1</p>
+		<span>追加したテキスト2</span>
+	</div>
+	<br />
+	<div>
+		<span>追加したテキスト3</span>
+		<p>追加したテキスト4</p>
+	</div>
 </body>
 
 </html>
