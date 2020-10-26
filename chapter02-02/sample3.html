@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<title>sample3</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script>
-$(function(){
-	$("p#first").html("<strong>変更後</strong>");
-});
-		</script>
-	</head>
-	<body>
-		<p id="first">変更前</p>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>sample3</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(function () {
+			// id=first の html の中に  <strong>変更後</strong> をセット
+			// 
+			// 以下の ★ の中に <strong>変更後</strong> が入る
+			// <p id="first">★</p>
+			$("p#first").html("<strong>変更後</strong>");
+		});
+	</script>
+</head>
+
+<body>
+	<p id="first">変更前</p>
+</body>
+
 </html>
