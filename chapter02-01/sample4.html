@@ -8,9 +8,9 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
 		$(function () {
-			// スペース(以外もある)は 子孫結合子 となっていて、
+			// スペースは 子孫結合子 と呼び、
 			// 子孫結合子 の前 ( .first ) の 子孫 として、 後 (strong) の要素セレクタ を検索している
-			// strong の 事を 子孫セレクタ と言っている人がいる ( 別に用語は覚えなくていい )
+			// 子孫結合子の後ろになるセレクタ( この場合 strong ) の 事を 子孫セレクタ と言っている人がいる
 			$(".first strong").css("color", "red");
 		});
 	</script>
@@ -18,10 +18,26 @@
 
 <body>
 	<ul>
-		<li class="first"><strong>class="first" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
-		<li class="second"><strong></strong>class="second" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
-		<li class="third"><strong></strong>class="third" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
-		<li class="fourth"><strong></strong>class="fourth" で strong タグで囲まれたテキスト</strong>class="first" で strong タグで囲まれていないテキスト</li>
+		<li class="first">
+			class は first
+			<strong>strong 要素で囲まれたテキスト</strong>
+			strong 要素で囲まれていないテキスト
+		</li>
+		<li class="second">
+			class は second
+			<strong>strong 要素で囲まれたテキスト</strong>
+			strong 要素で囲まれていないテキスト
+		</li>
+		<li class="third">
+			class は third
+			<strong>strong 要素で囲まれたテキスト</strong>
+			strong 要素で囲まれていないテキスト
+		</li>
+		<li class="fourth">
+			class は fourth
+			<strong>strong 要素で囲まれたテキスト</strong>
+			strong 要素で囲まれていないテキスト
+		</li>
 	</ul>
 </body>
 

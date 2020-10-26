@@ -14,7 +14,9 @@
 
 
 
-- [chapter01-01 : sample1 : オンラインデモ](https://ces-shiraishi.github.io/kurihara-training-part9/chapter01-01/sample1.html)
+- [ハンズオン1 : chapter01/01/sample1 : オンラインデモ](https://ces-shiraishi.github.io/kurihara-training-part9/chapter01-01/sample1.html)
+ - こんな風になるんだ的な感じで良い
+ - 実際にアニメーションを動かすことはデザイナではないのであまりない
 - [chapter02-01 : sample1 : オンラインデモ](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample1.html)
 - [chapter02-01 : sample2 : オンラインデモ](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample2.html)
 - [chapter02-01 : sample3 : オンラインデモ](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample3.html)
