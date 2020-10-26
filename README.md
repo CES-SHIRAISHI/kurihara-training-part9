@@ -28,8 +28,7 @@
 - https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Selectors
 - https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes
 
-
-#### オンラインデモ
+オンラインデモ
 
 - [chapter02/01/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample1.html)
 - [chapter02/01/sample2.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample2.html)
@@ -41,6 +40,10 @@
 
 ### P11.ハンズオン 03
 
+
+
+オンラインデモ
+
 - [chapter02/01/sample7.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample7.html)
 - [chapter02/01/sample9.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample9.html)
 - [chapter02/01/sample11.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample11.html)
@@ -48,6 +51,8 @@
 
 
 ### P12.ハンズオン 04
+
+オンラインデモ
 
 - [chapter02/01/sample23.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample23.html)
 - [chapter02/01/sample24.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-01/sample24.html)
@@ -144,11 +149,5 @@
 ### P36.ハンズオン 22
 
 - [chapter02/04/sample10.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample10.html)
-
-
-
-
-
-## デモ改訂履歴
 
 
