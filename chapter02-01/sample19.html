@@ -9,8 +9,9 @@
 	<script>
 		$(function () {
 			// first-child と 違い、一番最初に出てくるものに反応する
-			// 一番最初の dd 要素 に対応する
+			// 兄弟要素の中で 一番最初の dd 要素 を示す
 			$("dd:first-of-type").css("color", "red");
+
 			// first-child と 同じ例
 			$("p:first-of-type").css("color", "blue");
 		});
