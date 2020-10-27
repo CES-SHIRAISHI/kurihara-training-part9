@@ -13,7 +13,7 @@
 - [疑似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes)
 - [jQuery入門](http://www.jquerystudy.info/index.html)
 
-動作確認する場合は、(jsfiddle)[https://jsfiddle.net/] などを利用して動作確認した方が確認しやすい
+動作確認する場合は、[jsfiddle](https://jsfiddle.net/) などを利用して動作確認した方が確認しやすい
 
 
 ## 補足すること
