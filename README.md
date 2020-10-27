@@ -13,6 +13,8 @@
 - [疑似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes)
 - [jQuery入門](http://www.jquerystudy.info/index.html)
 
+動作確認する場合は、(jsfiddle)[https://jsfiddle.net/] などを利用して動作確認した方が確認しやすい
+
 
 ## 補足すること
 
@@ -84,9 +86,13 @@
 
 オンラインデモ
 
+オンラインデモ
+
 - [chapter02/02/sample9.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample9.html)
 
 ### P19.ハンズオン 09
+
+オンラインデモ
 
 オンラインデモ
 
@@ -95,19 +101,28 @@
 
 ### P20.ハンズオン 10
 
+
+オンラインデモ
+
 - [chapter02/02/sample20.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample20.html)
 
 
 ### P21.ハンズオン 11
 
+オンラインデモ
+
 - [chapter02/02/sample22.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample22.html)
 
 ### P22.ハンズオン 12
+
+オンラインデモ
 
 - [chapter02/02/sample24.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-02/sample24.html)
 
 
 ### P25.ハンズオン 12
+
+オンラインデモ
 
 - [chapter02/03/sample5.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-03/sample5.html)
 - [chapter02/03/sample6.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-03/sample6.html)
@@ -115,23 +130,35 @@
 
 ### P26.ハンズオン 13
 
+オンラインデモ
+
 - [chapter02/03/sample13.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-03/sample13.html)
 
 ### P27.ハンズオン 14
+
+
+オンラインデモ
 
 - [chapter02/03/sample15.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-03/sample15.html)
 
 
 ### P28.ハンズオン 15
 
+
+オンラインデモ
+
 - [chapter02/04/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample1.html)
 
 
 ### P29.ハンズオン 16
 
+オンラインデモ
+
 - [chapter02/04/sample2.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample2.html)
 
 ### P30.ハンズオン 17
+
+オンラインデモ
 
 - [chapter02/04/sample4.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample4.html)
 
@@ -158,27 +185,36 @@ $(function () {
         });
 });
 ```
+オンラインデモ
+
 - [chapter02/04/sample5.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample5.html)
 
 ### P32.ハンズオン 19
+
+オンラインデモ
 
 - [chapter02/04/sample6.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample6.html)
 
 
 ### P34.ハンズオン 20
 
-1. `$("span").css("font-weight")` の戻り値は数値を返すことがあり、 bold という文字列を返さないため、ハンズオンのソースは正しくない。そもそも値がセットされていない場合は `undefined` を戻すので、それを利用する
-1. 別のページにサブミットされてしまうため、サブミットされないように修正を実施している
-1. 値が入った場合にどうするか？というのを考えて個人で修正すると良い
+1. `$("span").css("font-weight")` の戻り値は数値を返すことがあり、 bold という文字列を返さないため、ハンズオンのソースは正しくない。
+1. そもそも値がセットされていない場合は `undefined` を戻すので、それを利用する
+
+オンラインデモ
 
 - [chapter02/04/sample8.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample8.html)
 
 ### P35.ハンズオン 21
 
+オンラインデモ
+
 - [chapter02/04/sample9.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample9.html)
 
 
 ### P36.ハンズオン 22
+
+オンラインデモ
 
 - [chapter02/04/sample10.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample10.html)
 

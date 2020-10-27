@@ -23,15 +23,16 @@
                                 "font-weight": "bold",
                             });
                         }
-                    }
 
-					return false;
+						// エラーメッセージを表示させるので、画面遷移させない
+						return false;
+                    }
                 });
             });
         </script>
     </head>
     <body>
-        <form action="javascript:void(0); method="post">
+        <form action="check.html" method="post">
             <dl>
                 <dt>お名前<em>(必須)</em></dt>
                 <dd><input type="text" name="name" /></dd>
