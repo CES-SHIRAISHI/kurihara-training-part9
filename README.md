@@ -35,7 +35,7 @@
 
 オンラインデモ
 - [chapter01/01/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter01-01/sample1.html)
-
+  - [codepen](https://codepen.io/ces-shiraishi/pen/RwRLQJv)
 
 ### P10.ハンズオン 02 
 
