@@ -157,6 +157,7 @@
 オンラインデモ
 
 - [chapter02/04/sample1.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample1.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/YzWaGjK)
 
 
 ### P29.ハンズオン 16
@@ -164,12 +165,17 @@
 オンラインデモ
 
 - [chapter02/04/sample2.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample2.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/rNLdMKK)
+
+
 
 ### P30.ハンズオン 17
 
 オンラインデモ
 
 - [chapter02/04/sample4.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample4.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/WNxzGyj)
+
 
 
 ### P31.ハンズオン 18
@@ -197,12 +203,15 @@ $(function () {
 オンラインデモ
 
 - [chapter02/04/sample5.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample5.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/MWeVjGQ)
+
 
 ### P32.ハンズオン 19
 
 オンラインデモ
 
 - [chapter02/04/sample6.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample6.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/vYKRXjY)
 
 
 ### P34.ハンズオン 20
@@ -213,12 +222,15 @@ $(function () {
 オンラインデモ
 
 - [chapter02/04/sample8.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample8.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/NWrYRYd)
+
 
 ### P35.ハンズオン 21
 
 オンラインデモ
 
 - [chapter02/04/sample9.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample9.html)
+  - [codepen](https://codepen.io/ces-shiraishi/pen/YzWaGem)
 
 
 ### P36.ハンズオン 22
@@ -226,5 +238,4 @@ $(function () {
 オンラインデモ
 
 - [chapter02/04/sample10.html](https://ces-shiraishi.github.io/kurihara-training-part9/chapter02-04/sample10.html)
-
-
+  - [codepen](https://codepen.io/ces-shiraishi/pen/dyXmMMY)
