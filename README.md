@@ -12,6 +12,7 @@
 - [セレクタ](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Selectors)
 - [疑似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes)
 - [jQuery入門](http://www.jquerystudy.info/index.html)
+  - [jQuery入門:セレクタ](http://www.jquerystudy.info/reference/selectors/index.html)
 
 動作確認する場合は、[jsfiddle](https://jsfiddle.net/) などを利用して動作確認した方が確認しやすい
 
